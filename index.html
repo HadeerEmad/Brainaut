@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Hadeer Emad">
+    <meta name="robots" content="index/follow">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+
+    <title>Brainaut DeFi</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <meta name="theme-color" content="#212121">
+    <meta name="msapplication-navbutton-color" content="#212121">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#212121">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reddit.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!--===============================
+    LOADER
+===================================-->
+
+<div class="pre-load">
+    <div class="lds-ripple">
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+
+
+<!--===============================
+    NAV
+===================================-->
+
+<nav id="mainNavbar" class="navbar navbar-expand-md px-md-0 fixed-top">
+    <div class="container">
+        <a class="navbar-brand m-0 text-white text-uppercase font-2x font-weight-bold" href="index.html" title="Brainaut DeFi"><img src="images/logo.png" alt="Brainaut DeFi" class="mr-2"> Brainaut DeFi</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarId" aria-controls="navbarId" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarId">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item px-xl-2">
+                    <a class="nav-link active" title="Home" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item px-xl-2">
+                    <a class="nav-link" title="TRADE" href="trade.html">TRADE</a>
+                </li>
+                <li class="nav-item px-xl-2">
+                    <a class="nav-link" title="POOL" href="pool.html">POOL</a>
+                </li>
+                <li class="nav-item px-xl-2">
+                    <a class="nav-link" title="NFT" href="nft.html">NFT</a>
+                </li>
+                <li class="nav-item px-xl-2">
+                    <a class="nav-link" title="FAQs" href="faqs.html">FAQs</a>
+                </li>
+                <li class="dropdown nav-item px-xl-2">
+                    <a class="dropdown-toggle nav-link text-white-50" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN <i class="fa fa-angle-down ml-1"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item active" href="#">EN</a>
+                        <a class="dropdown-item" href="#">ES</a>
+                        <a class="dropdown-item" href="#">RU</a>
+                        <a class="dropdown-item" href="#">CG</a>
+                    </div>
+                </li>
+                <li class="nav-item px-xl-2 mt-3 mt-md-0">
+                    <button class="btn btn-sm btn-primary" title="Connect Wallet" data-toggle="modal" data-target="#walletModal">Connect Wallet</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mirror"></div>
+
+    </div>
+</nav>
+
+
+
+<!--===============================
+    HEADER
+===================================-->
+
+<header class="win-height py-5 position-relative overflow-hidden">
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div class="container-sm py-5 position-absolute z-5 text-center text-uppercase">
+        <h1 class="font-5x font-weight-bold mt-0 mb-4 animate-box with-delay left-in"><span class="grad-heading">BRAINAUT DEFI</span></h1>
+        <p class="font-2x m-0 animate-box with-delay text-white">Scale up easily and be a part of the future of DeFi.</p>
+    </div>
+</header>
+
+
+
+<!--===============================
+    NUMBERS
+===================================-->
+
+<section class="bg-darker text-center" id="counter">
+    <div class="container py-4">
+        <div class="row align-items-center">
+            <div class="col-md flex-grow-0 py-3"><img src="images/logo-2.png" alt="" class="img-small"></div>
+            <div class="col-md py-3">
+                <h2 class="mb-3 counter-value" id="brnValue"></h2>
+                <p class="m-0 text-uppercase text-muted">Value</p>
+            </div>
+            <div class="col-md py-3">
+                <h2 class="mb-3 counter-value" id="brnSupply"></h2>
+                <p class="m-0 text-uppercase text-muted">Supply</p>
+            </div>
+            <div class="col-md py-3">
+                <h2 class="mb-3 counter-value" id="brnMarketcap"></h2>
+                <p class="m-0 text-uppercase text-muted">Marketcap</p>
+            </div>
+            <div class="col-md py-3">
+                <h2 class="mb-3 counter-value" id="brnBurned"></h2>
+                <p class="m-0 text-uppercase text-muted">BURNED</p>
+            </div>
+        </div>
+    </div>
+    <div class="border-bottom border-dark"></div>
+    <div class="container py-4">
+        <div class="row align-items-center">
+            <div class="col-md flex-grow-0 py-3"><img src="images/xlogo-2.png" alt="" class="img-small"></div>
+            <div class="col-md py-3">
+                <h2 class="mb-3 counter-value" id="xbrnValue"></h2>
+                <p class="m-0 text-uppercase text-muted">Value</p>
+            </div>
+            <div class="col-md py-3">
+                <h2 class="mb-3 counter-value" id="xbrnSupply"></h2>
+                <p class="m-0 text-uppercase text-muted">Supply</p>
+            </div>
+            <div class="col-md py-3">
+                <h2 class="mb-3 counter-value" id="xbrnMarketcap"></h2>
+                <p class="m-0 text-uppercase text-muted">Marketcap</p>
+            </div>
+            <div class="col-md py-3">
+                <!--<h2 class="mb-3 counter-value" id="xbrnBurned"></h4>
+                <p class="m-0 text-uppercase text-muted">BURNED</p>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--===============================
+    LAUNCHPAD
+===================================-->
+
+<section class="bg-dark py-5">
+    <div class="container py-5">
+        <h3 class="mb-5 text-center"><span class="main-heading text-uppercase">LanuchPad</span></h3>
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+                <p class="mb-2">Join the launchpad and invest in the XBRN token. The purchased XBRN tokens will be immediately granted to your wallet, and you will be able to track their market value in real time.</p>
+                <p>Investors will be free to withdraw and trade their tokens right after the end of the presale period.</p>
+            </div>
+        </div>
+
+
+        <div class="row align-items-center flex-row-reverse py-4">
+            <div class="col-md-7 animate-box">
+                <h4 class="text-uppercase mb-4">join the xbrn pre-sale:</h4>
+                <ul class="list-unstyled mb-4">
+                    <li class="border-bottom border-dark py-3">
+                        <h5>Sale Price:</h5>
+                        <p class="mb-1">Phase I <span class="float-right">1 <span class="text-primary pl-1">BNB</span> = 1000 <span class="text-secondary pl-1">XBRN</span></span></p>
+                        <p class="mb-1">Phase II <span class="float-right">1 <span class="text-primary pl-1">BNB</span> = 950 <span class="text-secondary pl-1">XBRN</span></span></p>
+                        <p class="mb-1">Phase III <span class="float-right">1 <span class="text-primary pl-1">BNB</span> = 900 <span class="text-secondary pl-1">XBRN</span></span></p>
+                    </li>
+                    <li class="border-bottom border-dark py-3">Tokens Offered <span class="float-right">1,500,000 <span class="text-primary pl-1">XBRN</span></span></li>
+                    <li class="pt-3 pb-1">Min Per Buyer <span class="float-right">0.01 <span class="text-primary pl-1">BNB</span></span></li>
+                    <li class="border-bottom border-dark py-3">Max Per Buyer <span class="float-right">10 <span class="text-primary pl-1">BNB</span></span></li>
+                </ul>
+
+                <h4 class="text-uppercase mt-5 mb-4">brn holder reward</h4>
+                <ul class="list-unstyled mb-4">
+                    <li class="border-bottom border-dark py-3">Tokens Rewarded <span class="float-right">1000 <span class="text-secondary pl-1">XBRN</span> per 1,000,000 <span class="text-primary pl-1">BRN</span></span></li>
+                    <li class="border-bottom border-dark py-3">Holding Time <span class="float-right">Presale Period</span></li>
+                </ul>
+
+                <p class="text-center">XBRN tokens will be distributed after presale period</p>
+            </div>
+            <div class="col-md-5 animate-box right-in">
+                <div class="card mt-5 mt-md-0 bg-darker">
+                    <div class="card-body py-5 px-4 text-center">
+                        <h4 class="mb-4" id="preslaeText">Presale of XBRN Starting In</h4>
+                        <div class="countdown">
+                            <div class="counter-holder d-flex justify-content-center">
+                                <div>
+                                    <span class="p-2 d-block rounded-sm mb-3 font-3x day">00</span>
+                                    <small>Days</small>
+                                </div>
+                                <div class="px-2 pt-2 font-2x">:</div>
+                                <div>
+                                    <span class="p-2 d-block rounded-sm mb-3 font-3x hours">00</span>
+                                    <small>Hours</small>
+                                </div>
+                                <div class="px-2 pt-2 font-2x">:</div>
+                                <div>
+                                    <span class="p-2 d-block rounded-sm mb-3 font-3x minutes">00</span>
+                                    <small>Minutes</small>
+                                </div>
+                                <div class="px-2 pt-2 font-2x">:</div>
+                                <div>
+                                    <span class="p-2 d-block rounded-sm mb-3 font-3x seconds">00</span>
+                                    <small>Seconds</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="text-uppercase text-center my-5"><span class="main-heading text-uppercase">BUY XBRN</span></h2>
+                        <form action="#" method="post">
+                            <div class="position-relative input-with-img">
+                                <img src="images/bnb.png" alt="">
+                                <input type="number" id="bnbInput" placeholder="0" class="form-control mb-4 text-right">
+                            </div>
+                            <div class="position-relative input-with-img">
+                                <img src="images/xbrn.png" alt="">
+                                <input type="number" id="xbrnInput" placeholder="0" class="form-control mb-4 text-right">
+                            </div>
+
+                            <div class="position-relative z-5"><button class="btn btn-primary btn-block" disabled id="buyBtn">Buy</button></div>
+                            <div class="text-center mt-4 pt-3"><a href="#" class="text-white btn-link text-uppercase">How to buy?</a></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--===============================
+    ABOUT
+===================================-->
+
+<section class="py-5">
+    <div class="container py-5 text-center">
+        <h2 class="text-uppercase mb-5 animate-box left-in"><span class="main-heading text-uppercase">About Us</span></h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <p class="mb-3">Brainaut DeFi is a decentralized exchange platform providing a real trustful and transparent investment opportunity in the decentralized finance world. The ultimate goal of Brainaut is to be an all-in-one platform offering a wide array of trading. Our investors both corporate and private ones will have a simple access to all the tools they need from a single platform.</p>
+                <p class="m-0">Tokenizing assets is the future of traditional assets as the world becomes more digitized, it will give you the opportunity to make your digital finances grow faster and give great returns.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--===============================
+    TOKENS
+===================================-->
+
+<section class="py-5 bg-dark">
+    <div class="container py-5">
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="card bg-darker token-height my-3 my-md-0 animate-box right-in">
+                    <div class="card-body py-5">
+                        <div class="text-center logo-image"><img src="images/logo-2.png" class="mb-4" alt="Logo"></div>
+                        <h4 class="text-center mb-4">WHAT IS THE BRN TOKEN ?</h4>
+                        <p class="mb-2">On the Binance Smart Chain ecosystem, BRN is a 3rd generation reflectionary, deflationary, yield Farm token. For each transaction, a 4% fee is charged, 2 % of every BSC transaction is redistributed over all holders and the remaining 2% is burned.</p>
+                        <p class="mb-2">Thus, Brainaut has the ability to reflect and burn tokens instantly.</p>
+                        <p class="m-0">The total supply began at the starting point of the project with 100,000,000 tokens. As the BRN transactions take place, the burning decreases the amount of existing tokens until a supply limit of 10,000,000 BRN. Then, fees will not be charged in order to insure the Brainaut’s durability with a constant max supply of 10,000,000 tokens.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card bg-darker token-height my-3 my-md-0 animate-box left-in">
+                    <div class="card-body py-5">
+                        <div class="text-center logo-image"><img src="images/xlogo-2.png" class="mb-4" alt="Logo"></div>
+                        <h4 class="text-center mb-4">WHAT IS THE XBRN TOKEN ?</h4>
+                        <p class="mb-2">XBRN is a 3rd generation reflectionary, yield Farm token. For each transaction, a 1% fee is charged, the 1% of every BSC transaction is redistributed over all holders. Thus, Brainaut has the ability to reflect tokens instantly with no burning.</p>
+                        <p class="m-0">The total supply will remain 5,000,000 tokens. As the XBRN transactions take place.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!--===============================
+    FEATURES
+===================================-->
+
+<section class="py-5">
+    <div class="container py-5 features-holder">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7 text-center">
+                <h3 class="mb-5"><span class="main-heading text-uppercase">Main Features</span></h3>
+
+                <h4 class="mb-4">Real world asset</h4>
+                <p>With the BlockChain technology, assets like real estates, diamonds, gold, art, etc. can turn into a unique decentralized project. BRN holders will be able to be a part of a secure and permissionless decentralized environment where they can exploit their assets freely.</p>
+            </div>
+        </div>
+
+
+        <div class="row my-5 text-uppercase text-center">
+            <div class="col-sm-6 col-lg-3 animate-box with-delay">
+                <div class="card bg-dark my-3">
+                    <div class="card-body py-4">
+                        <div class="img-icon-holder"><img src="images/icon-1.png" alt="..."></div>
+                        <p class="mt-3 mb-2">Governance</p>
+                        <div class="round-dot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 animate-box with-delay">
+                <div class="card bg-dark my-3">
+                    <div class="card-body py-4">
+                        <div class="img-icon-holder"><img src="images/icon-2.png" alt="..."></div>
+                        <p class="mt-3 mb-2">Transparency</p>
+                        <div class="round-dot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 animate-box with-delay">
+                <div class="card bg-dark my-3">
+                    <div class="card-body py-4">
+                        <div class="img-icon-holder"><img src="images/icon-3.png" alt="..."></div>
+                        <p class="mt-3 mb-2">Asset Tokenization</p>
+                        <div class="round-dot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 animate-box with-delay">
+                <div class="card bg-dark my-3">
+                    <div class="card-body py-4">
+                        <div class="img-icon-holder"><img src="images/icon-4.png" alt="..."></div>
+                        <p class="mt-3 mb-2">Global Funding</p>
+                        <div class="round-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7 text-center">
+                <h4 class="mb-4">With DeFi, the future is now</h4>
+                <p>DeFi unlocks a whole new way of decentralized asset trading. With asset fractionalization, instant settlement, and peer-to-peer transactions. Tokenized assets enable raising & exchanging capital cheaper, easier and faster. Here are some of the upcoming functions.</p>
+            </div>
+        </div>
+
+
+        <div class="row mt-5 text-uppercase text-center">
+            <div class="col-sm-6 col-lg-3 animate-box with-delay">
+                <div class="card bg-dark my-3">
+                    <div class="card-body py-4">
+                        <div class="img-icon-holder"><img src="images/icon-2-1.png" alt="..."></div>
+                        <p class="mt-3 mb-2">Asset token Swap</p>
+                        <div class="round-dot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 animate-box with-delay">
+                <div class="card bg-dark my-3">
+                    <div class="card-body py-4">
+                        <div class="img-icon-holder"><img src="images/icon-2-2.png" alt="..."></div>
+                        <p class="mt-3 mb-2">RB stablecoin</p>
+                        <div class="round-dot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 animate-box with-delay">
+                <div class="card bg-dark my-3">
+                    <div class="card-body py-4">
+                        <div class="img-icon-holder"><img src="images/icon-2-3.png" alt="..."></div>
+                        <p class="mt-3 mb-2">Lending</p>
+                        <div class="round-dot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 animate-box with-delay">
+                <div class="card bg-dark my-3">
+                    <div class="card-body py-4">
+                        <div class="img-icon-holder"><img src="images/icon-2-4.png" alt="..."></div>
+                        <p class="mt-3 mb-2">Liquidity Pool</p>
+                        <div class="round-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!--===============================
+    ROADMAP
+===================================-->
+
+<section class="py-5 bg-dark">
+    <div class="container py-5 text-center">
+        <h3 class="mb-5"><span class="main-heading text-uppercase">Roadmap</span></h3>
+
+        <div class="owl-carousel roadmap pt-4 position-relative">
+
+            <div class="item pt-4 mt-4 position-relative">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">March 1st 2021</h6>
+                <p class="m-0">Website and Social Media Creation</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">March 7th 2021</h6>
+                <p class="m-0"> BRN Smart contract security Audit</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">March 14th 2021</h6>
+                <p class="m-0"> Initial coin offering (ICO) and crowdsale lunching</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">March 26th 2021</h6>
+                <p class="m-0"> BRN AMA and marketing campagne</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">March 29th 2021</h6>
+                <p class="m-0"> BRN Pancakeswap and DODO Launching</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">April 1st 2021</h6>
+                <p class="m-0"> Youtube and Twitter influencers campagne</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">April 07th 2021</h6>
+                <p class="m-0"> Listing on CoinMarketCap</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">April 2021 </h6>
+                <p class="m-0">Collaborations and Partnerships</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">April 18th 2021</h6>
+                <p class="m-0"> New token development XBRN</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">April 22nd 2021</h6>
+                <p class="m-0"> XBRN Smart contract security Audit</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">April 25th 2021</h6>
+                <p class="m-0"> Website update with new features</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative not-reatched">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">May 2nd 2021</h6>
+                <p class="m-0"> XBRN Initial coin offering (ICO) and presale launching</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative not-reatched">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">May 4th 2021</h6>
+                <p class="m-0"> XBRN AMA and marketing campagne</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative not-reatched">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">May 9th 2021</h6>
+                <p class="m-0"> XBRN Pancakeswap Launching</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative not-reatched">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">May 15th 2021</h6>
+                <p class="m-0"> BRN and XBRN staking pool launching</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative not-reatched">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">May 20th 2021</h6>
+                <p class="m-0"> XBRN Coingecko and Coinmarketcap listing</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative not-reatched">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">June 2021 </h6>
+                <p class="m-0">Collaborations and Partnerships</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative not-reatched">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">July 1st 2021</h6>
+                <p class="m-0"> NFT development</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative not-reatched">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">July 4th 2021</h6>
+                <p class="m-0"> Marketing Campaigne, Youtube and Twitter influencers campagne</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative not-reatched">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">November 2021 </h6>
+                <p class="m-0">Development of Brainaut 2nd generation (ERC20 & BSC)</p>
+            </div>
+
+            <div class="item pt-4 mt-4 position-relative not-reatched">
+                <span class="map-item"></span>
+                <h6 class="font-weight-bold">January 2022 </h6>
+                <p class="m-0">New roadmap.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!--===============================
+    TOKENOMICS
+===================================-->
+
+<section class="py-5">
+    <div class="container py-5 text-center">
+        <h3 class="mb-5"><span class="main-heading text-uppercase">DISTRIBUTION OF TOKENS (TOKENOMICS)</span></h3>
+
+        <div class="row justify-content-around align-items-center">
+
+            <div class="col-md-6 col-lg-6 my-3 text-center">
+                <h4 class="font-weight-bold mb-5"><span class="grad-heading">BRN Token</span></h4>
+                <div id="container"></div>
+            </div>
+
+            <div class="col-md-6 col-lg-5 my-3 text-center">
+                <h4 class="font-weight-bold mb-5"><span class="grad-heading">XBRN Token</span></h4>
+                <div id="container-2"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!--===============================
+    NEWS
+===================================-->
+
+<section class="py-5 bg-dark">
+    <div class="container py-5">
+        <h3 class="mb-5 text-center"><span class="main-heading text-uppercase">Recent News</span></h3>
+
+        <div class="row">
+            <div class="col-md-6 my-3">
+                <a class="twitter-timeline" data-height="600" href="https://twitter.com/brainaut1?ref_src=twsrc%5Etfw">--</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+            <div class="col-md-6 my-3">
+                <!--<script src ="https://cdn.jsdelivr.net/npm/reddit-embed@1.1.1"></script>
+                <script>
+                    red.setDefaults({
+                        show_comments_section_header: true,
+                        initial_padding: 100,
+                        post_author: true,
+                        post_title: true,
+                    })
+                    window.onload = red.embedAll
+                </script>
+                <div class="reddit-block">
+                    <img src="images/reddit-logo.png" class="reddit-img mb-3" alt="">
+                    <div class="reddit-embed center" red-opts='{"initial_padding": 10}' red-author="" red-title="" red-href="https://www.reddit.com/user/Brainautdefi/comments/mbqfmu/brainaut_defi_concept/about.json" ></div>
+                </div>-->
+                <iframe id="reddit-embed" src="https://www.redditmedia.com/user/Brainautdefi/comments/mbqfmu/brainaut_defi_concept/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" height="600" width="100%" scrolling="no"></iframe>
+            </div>
+        </div>
+
+        <!--<div class="row">
+            <div class="col-sm-6 col-lg-4 animate-box with-delay">
+                <div class="news-inner my-3">
+                    <div class="img-content"><img src="images/news-1.png" alt="" class="img-fluid"></div>
+                    <div class="card bg-darker">
+                        <div class="card-body pt-5 pb-4 px-4">
+                            <p>What is DEFI? Decentralized Finance Explained</p>
+                            <a href="#" title="Details" class="grad-heading font-weight-bold text-uppercase">Details <i class="fa fa-angle-double-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 animate-box with-delay">
+                <div class="news-inner my-3">
+                    <div class="img-content"><img src="images/news-1.png" alt="" class="img-fluid"></div>
+                    <div class="card bg-darker">
+                        <div class="card-body pt-5 pb-4 px-4">
+                            <p>What is DEFI? Decentralized Finance Explained</p>
+                            <a href="#" title="Details" class="grad-heading font-weight-bold text-uppercase">Details <i class="fa fa-angle-double-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 animate-box with-delay">
+                <div class="news-inner my-3">
+                    <div class="img-content"><img src="images/news-1.png" alt="" class="img-fluid"></div>
+                    <div class="card bg-darker">
+                        <div class="card-body pt-5 pb-4 px-4">
+                            <p>What is DEFI? Decentralized Finance Explained</p>
+                            <a href="#" title="Details" class="grad-heading font-weight-bold text-uppercase">Details <i class="fa fa-angle-double-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </div>
+</section>
+
+
+
+<!--===============================
+    BUILD
+===================================-->
+
+<section class="py-5">
+    <div class="container py-5 text-center">
+        <h3 class="mb-5"><span class="main-heading text-uppercase">Build the Ecosystem with us</span></h3>
+
+        <div class="row justify-content-around">
+            <div class="col-md-6 col-lg-5 animate-box with-delay">
+                <div class="text-center mt-4">
+                    <i class="fa fa-cubes fa-5x grad-heading"></i>
+                    <h4 class="font-weight-bold mt-4 mb-3">Build</h4>
+                </div>
+                <p class="m-1">If you are a developer and want to join our vision, contact us.</p>
+                <p class="m-1">If you are not a developer and still want to contribute and expand the ecosystem, contact us.</p>
+            </div>
+            <div class="col-md-6 col-lg-5 animate-box with-delay">
+                <div class="text-center mt-4">
+                    <i class="far fa-handshake fa-5x grad-heading"></i>
+                    <h4 class="font-weight-bold mt-4 mb-3">Partners</h4>
+                </div>
+                <p class="m-1">If you are a member of crypto community, platform, asset owner, Company or Enterprise, content provider and want to be a partner in the ecosystem, contact us. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--===============================
+    CONTACT
+===================================-->
+
+<section class="py-5 contact-holder">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-6">
+                <h2 class="text-center mb-5"><span class="main-heading text-uppercase">Contact Us</span></h2>
+
+                <form action="mail.php" method="post" class="animate-box">
+                    <input type="text" name="name" placeholder="Name" class="form-control mb-4" required>
+                    <input type="email" name="email" placeholder="Email" class="form-control mb-4" required>
+                    <input type="tel" name="phone" placeholder="Phone" class="form-control mb-4">
+                    <input type="text" name="subject" placeholder="Subject" class="form-control mb-4" required>
+                    <textarea name="message" placeholder="Type your message here..." class="form-control mb-4" required></textarea>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-xl text-uppercase">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--===============================
+    FOOTER
+===================================-->
+
+<footer class="bg-dark py-4">
+    <div class="container">
+        <div class="row mb-4 align-items-center border-dark border-bottom pb-4">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled m-0">
+                            <li class="my-1"><a href="#" target="_blank">Audit</a></li>
+                            <li class="my-1"><a href="#" target="_blank">BRN BscScan</a></li>
+                            <li class="my-1"><a href="#" target="_blank">BRN CoinMarketCap</a></li>
+                            <li class="my-1"><a href="#" target="_blank">BRN Cingecko</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled m-0">
+                            <li class="my-1"><a href="#" target="_blank">White Paper</a></li>
+                            <li class="my-1"><a href="#" target="_blank">XBRN BscScan</a></li>
+                            <li class="my-1"><a href="#" target="_blank">XBRN Cingecko</a></li>
+                            <li class="my-1"><a href="#" target="_blank">XBRN CoinMarketCap</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center mt-4 mt-md-0 text-md-right">
+                <ul class="list-unstyled list-inline social-links m-0">
+                    <li class="list-inline-item my-2">
+                        <a href="https://www.facebook.com/Brainaut-DeFi-102687321907322/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="list-inline-item my-2">
+                        <a href="https://twitter.com/brainaut1" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item my-2">
+                        <a href="https://github.com/Brainaut" target="_blank"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li class="list-inline-item my-2">
+                        <a href="https://www.reddit.com/u/Brainautdefi" target="_blank"><i class="fab fa-reddit"></i></a>
+                    </li>
+                    <li class="list-inline-item my-2">
+                        <a href="https://t.me/brainaut" target="_blank"><i class="fa fa-paper-plane"></i></a>
+                    </li>
+                    <li class="list-inline-item my-2">
+                        <a href="https://www.youtube.com/channel/UCbV-GvYkPehFBhiOG7EXUyw" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="list-inline-item my-2">
+                        <a href="https://medium.com/@brainaut" target="_blank"><i class="fab fa-medium-m"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row align-items-center text-center">
+            <div class="col-md-6 text-md-left">
+                <p class="mb-md-0">&copy; 2021 Brainaut, Made by BrainautTEAM</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <ul class="list-unstyled list-inline m-0">
+                    <li class="list-inline-item">
+                        <a href="terms.html" title="Terms of Service">Terms of Service</a>
+                    </li>
+                    <li class="list-inline-item mx-2">|</li>
+                    <li class="list-inline-item">
+                        <a href="policy.html" title="Privacy Policy">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!--===============================
+    CONNECT WALLET MODAL
+===================================-->
+
+<div class="modal fade" id="walletModal" tabindex="-1" aria-labelledby="walletModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content bg-dark">
+            <div class="modal-header border-dark">
+                <h5 class="modal-title" id="exampleModalLabel">Connect to wallet</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <a href="#" class="card d-block my-3 bg-darker text-white" id="connectMM">
+                    <div class="card-body py-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="m-0">MetaMask</h6>
+                            <div class="wallet-img"><img src="images/mm.png" alt=""></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card d-block my-3 bg-darker text-white" id="connectTW">
+                    <div class="card-body py-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="m-0">TrustWallet</h6>
+                            <div class="wallet-img"><img src="images/TWT.png" alt=""></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--===============================
+    CONNECT WALLET MODAL
+===================================-->
+
+<div class="modal fade" id="confirmModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content bg-dark">
+            <div class="modal-body py-5 text-center">
+                <div id="modalBeforeConfirm">
+                    <h5 class="mb-4">Waiting for confirmation</h5>
+                    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <p class="mt-4 mb-0 small">Confirm this transaction on your wallet</p>
+                </div>
+
+                <div id="modalAfterConfirm" class="d-none">
+                    <h5>Transaction submitted</h5>
+                    <a href="https://bscscan.com/tx/0x74c8bf948758a0e370724e741135a7bfb3d9318ef0bbaaa39bbeecf65658ea84" target="_blank" class="d-inline-block text-white py-4">View on BscScan <i class="fa fa-share-square ml-2"></i></a>
+                    <div class="position-relative z-5"><a href="#" data-dismiss="modal" class="btn btn-primary">Close</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--===============================
+    SCRIPT
+===================================-->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script>
+    Highcharts.chart('container', {
+        chart: {
+            type: 'pie',
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false,
+            backgroundColor: 'rgba(255, 255, 255, 0.0)'
+        },
+        title: {
+            text: '',
+            align: 'center',
+            verticalAlign: 'middle',
+            y: 0,
+            style: {
+                color: '#fff',
+                fontWeight: '100',
+                fontSize: "11px",
+                fontFamily: "'Open Sans', sans-serif",
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: true,
+                         distance: 10,
+                    style: {
+                        color: '#fff',
+                        fontWeight: '100',
+                        fontSize: "11px",
+                        fontFamily: "'Open Sans', sans-serif",
+                        "textOutline": "0px contrast"
+                    }
+                },
+                borderColor: 'rgba(255, 255, 255, 0.0)'
+            },
+            series: {
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name} {point.y:.0f}%'
+                }
+            }
+        },
+
+        series: [{
+            type: 'pie',
+            name: ' BRN ',
+            innerSize: '50%',
+            data: [{
+                    name: 'PRESALE',
+                    y: 30,
+                    color: '#10afd1'
+                },
+                {
+                    name: 'LIQUIDITY',
+                    y: 40,
+                    color: '#196db6'
+                },
+                {
+                    name: 'STAKING REWARDS',
+                    y: 14,
+                    color: '#924f9f'
+                },
+                {
+                    name: 'MARKETING',
+                    y: 8,
+                    color: '#e74b92'
+                },
+                {
+                    name: 'DEVELOPERS',
+                    y: 8,
+                    color: '#f0664e'
+                }
+            ]
+        }]
+    });
+
+    Highcharts.chart('container-2', {
+        chart: {
+            type: 'pie',
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false,
+            backgroundColor: 'rgba(255, 255, 255, 0.0)'
+        },
+        title: {
+            text: '',
+            align: 'center',
+            verticalAlign: 'middle',
+            y: 0,
+            style: {
+                color: '#fff',
+                fontWeight: '100',
+                fontSize: "11px",
+                fontFamily: "'Open Sans', sans-serif",
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: true,
+                         distance: 10,
+                    style: {
+                        color: '#fff',
+                        fontWeight: '100',
+                        fontSize: "11px",
+                        fontFamily: "'Open Sans', sans-serif",
+                        "textOutline": "0px contrast"
+                    }
+                },
+                borderColor: 'rgba(255, 255, 255, 0.0)'
+            },
+            series: {
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name} {point.y:.0f}%'
+                }
+            }
+        },
+
+        series: [{
+            type: 'pie',
+            name: ' XBRN ',
+            innerSize: '50%',
+            data: [{
+                    name: 'PRESALE',
+                    y: 30,
+                    color: '#10afd1'
+                },
+                {
+                    name: 'LIQUIDITY',
+                    y: 20,
+                    color: '#196db6'
+                },
+                {
+                    name: 'STAKING POOL',
+                    y: 14,
+                    color: '#924f9f'
+                },
+                {
+                    name: 'MARKETING',
+                    y: 12,
+                    color: '#e74b92'
+                },
+                {
+                    name: 'PARTNERSHIP',
+                    y: 10,
+                    color: '#f0664e'
+                },
+                {
+                    name: 'STAKING BRN REWARDS for PRESALE PERIOD',
+                    y: 5,
+                    color: '#f05426'
+                },
+                {
+                    name: 'DEVELOPERS',
+                    y: 3,
+                    color: '#a52921'
+                }
+            ]
+        }]
+    });
+</script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

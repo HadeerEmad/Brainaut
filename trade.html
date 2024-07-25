@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Hadeer Emad">
+    <meta name="robots" content="index/follow">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+
+    <title>Brainaut DeFi</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <meta name="theme-color" content="#212121">
+    <meta name="msapplication-navbutton-color" content="#212121">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#212121">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!--===============================
+    LOADER
+===================================-->
+
+<div class="pre-load">
+    <div class="lds-ripple">
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+
+
+<!--===============================
+    NAV
+===================================-->
+
+<nav id="mainNavbar" class="navbar navbar-expand-md px-md-0 fixed-top">
+    <div class="container">
+        <a class="navbar-brand m-0 text-white text-uppercase font-2x font-weight-bold" href="index.html" title="Brainaut DeFi"><img src="images/logo.png" alt="Brainaut DeFi" class="mr-2"> Brainaut DeFi</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarId" aria-controls="navbarId" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarId">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item px-xl-2">
+                    <a class="nav-link" title="Home" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item px-xl-2">
+                    <a class="nav-link active" title="TRADE" href="trade.html">TRADE</a>
+                </li>
+                <li class="nav-item px-xl-2">
+                    <a class="nav-link" title="POOL" href="pool.html">POOL</a>
+                </li>
+                <li class="nav-item px-xl-2">
+                    <a class="nav-link" title="NFT" href="nft.html">NFT</a>
+                </li>
+                <li class="nav-item px-xl-2">
+                    <a class="nav-link" title="FAQs" href="faqs.html">FAQs</a>
+                </li>
+                <li class="dropdown nav-item px-xl-2">
+                    <a class="dropdown-toggle nav-link text-white-50" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN <i class="fa fa-angle-down ml-1"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item active" href="#">EN</a>
+                        <a class="dropdown-item" href="#">ES</a>
+                        <a class="dropdown-item" href="#">RU</a>
+                        <a class="dropdown-item" href="#">CG</a>
+                    </div>
+                </li>
+                <li class="nav-item px-xl-2">
+                    <button class="btn btn-sm btn-primary" title="Connect Wallet" data-toggle="modal" data-target="#walletModal">Connect Wallet</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mirror"></div>
+
+    </div>
+</nav>
+
+
+
+<!--===============================
+    HEADER
+===================================-->
+
+<header class="py-5 position-relative overflow-hidden">
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div class="pt-5 pb-4 text-uppercase text-center">
+        <p class="font-3x mt-5 mb-0 animate-box text-white">Trade</p>
+    </div>
+</header>
+
+
+
+<!--===============================
+    CONTENT
+===================================-->
+
+<section class="py-5">
+    <div class="container py-5">
+
+        <div class="text-center mb-5">
+            <h5 class="mb-4">TRADE PAGE is under construction, you can buy tokens on pancakeswap:</h5>
+            <a href="https://v1exchange.pancakeswap.finance/#/swap?outputCurrency=0x5749085c36a521f71ad2050cb600b2165aabdf68" target="_blank" class="btn btn-primary m-3"><img src="images/pancakeswap.png" alt="" class="mr-2"> BUY BRN</a>
+            <a href="#" class="btn btn-primary m-3"><img src="images/pancakeswap.png" alt="" class="mr-2"> BUY XBRN (soon)</a>
+        </div>
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-7">
+                <div class="d-md-flex align-items-center justify-content-between">
+                    <div>
+                        <h4>
+                            <img src="images/brn.png" alt="" id="firstSymbolImage">
+                            <img src="images/bnb.png" alt="" id="secondSymbolImage">
+                            <span id="firstSymbol">BRN</span> <span class="text-muted">/ <span id="secondSymbol">BNB</span></span>
+                        </h4>
+                        <p class="font-3x text-white mt-3"><span id="chartValue">1,000,000</span> BNB</p>
+                        <p><span id="secChartValue">1000</span> BNB</p>
+                    </div>
+
+                    <div class="flex-grow-0">
+                        <button class="btn btn-primary active btn-sm my-3 mx-1" id="oneDay">1D</button>
+                        <button class="btn btn-primary btn-sm my-3 mx-1" id="oneWeek">1W</button>
+                        <button class="btn btn-primary btn-sm my-3 mx-1" id="oneMonth">1M</button>
+                    </div>
+                </div>
+
+                <div id="container"></div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="card bg-dark">
+                    <div class="card-body">
+                        <form action="#" method="post" id="tradeForm">
+                            <div id="tradeOptions">
+                                <h4 class="mb-5">
+                                    <button id="optionsBack"><i class="fa fa-arrow-left text-white mr-2"></i></button>
+                                    Trade Settings
+                                </h4>
+
+                                <p>Slippage Tolerance</p>
+                                <label class="radio-box">
+                                    <input type="radio" name="slippage" value="0.5">
+                                    <span>0.5%</span>
+                                </label>
+                                <label class="radio-box">
+                                    <input type="radio" name="slippage" value="1">
+                                    <span>1%</span>
+                                </label>
+                                <label class="radio-box">
+                                    <input type="radio" name="slippage" value="3" checked>
+                                    <span>3%</span>
+                                </label>
+                                <input type="number" id="slippagePercent" class="form-control w-25 d-inline-block mr-2"> %
+
+                                <p class="mt-4">Transaction Deadline</p>
+                                <input type="number" id="deadline" value="20" class="form-control w-25 d-inline-block mr-2"> min
+                            </div>
+
+                            <div id="tradeFormContent">
+                                <div class="text-right mb-4">
+                                    <button class="btn btn-sm btn-dark" id="viewSettings"><i class="fa fa-cog font-2x"></i></button>
+                                </div>
+
+                                <p>Pay <span class="float-right">Available: <span id="availableBalance">0</span></span></p>
+
+                                <div class="d-flex align-items-start flex-row-reverse">
+                                    <input type="number" min="0.1" step="0.1" id="payInput" value="0" class="form-control text-right">
+                                    <div class="flex-grow-0 position-relative pl-2">
+                                        <select class="selectpicker" id="paySelect">
+                                            <option value="brn" selected data-content="<img src='images/brn.png' class='mr-1' alt=''> BRN">BRN</option>
+                                            <option value="xbrn" data-content="<img src='images/xbrn.png' class='mr-1' alt=''> XBRN">XBRN</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="text-center mt-4"><button id="tradeReverse"><i class="fa fa-2x fa-arrow-down text-white"></i></button></div>
+
+                                <p class="mt-4">Receive <!--<span class="float-right">Available: 0</span>--></p>
+
+                                <div class="d-flex align-items-start flex-row-reverse">
+                                    <input type="number" min="0.1" step="0.1" id="receiveInput" value="0" class="form-control text-right">
+                                    <div class="flex-grow-0 position-relative pl-2">
+                                        <select class="selectpicker" id="receiveSelect">
+                                            <option value="bnb" selected data-content="<img src='images/bnb.png' class='mr-1' alt=''> BNB">BNB</option>
+                                            <option value="usdt" data-content="<img src='images/usdt.png' class='mr-1' alt=''> USDT">USDT</option>
+                                            <option value="busd" data-content="<img src='images/busd.png' class='mr-1' alt=''> BUSD">BUSD</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <p class="mt-4 text-center">1 <span id="symbolPay">BRN</span> = <span id="tradeValue">--</span> <span id="symbolReceive">BNB</span></p>
+
+                                <div class="alert bg-darker text-center text-white-50">Enter an amount to see more trading details.</div>
+
+                                <div class="position-relative z-5">
+                                    <button class="btn btn-primary btn-block" id="confirmOrder" disabled>Confirm Order</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!--===============================
+    FOOTER
+===================================-->
+
+<footer class="bg-dark py-4">
+    <div class="container">
+        <div class="row mb-4 align-items-center border-dark border-bottom pb-4">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled m-0">
+                            <li class="my-1"><a href="#" target="_blank">Audit</a></li>
+                            <li class="my-1"><a href="#" target="_blank">BRN BscScan</a></li>
+                            <li class="my-1"><a href="#" target="_blank">BRN CoinMarketCap</a></li>
+                            <li class="my-1"><a href="#" target="_blank">BRN Cingecko</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled m-0">
+                            <li class="my-1"><a href="#" target="_blank">White Paper</a></li>
+                            <li class="my-1"><a href="#" target="_blank">XBRN BscScan</a></li>
+                            <li class="my-1"><a href="#" target="_blank">XBRN Cingecko</a></li>
+                            <li class="my-1"><a href="#" target="_blank">XBRN CoinMarketCap</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center mt-4 mt-md-0 text-md-right">
+                <ul class="list-unstyled list-inline social-links m-0">
+                    <li class="list-inline-item my-2">
+                        <a href="https://www.facebook.com/Brainaut-DeFi-102687321907322/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="list-inline-item my-2">
+                        <a href="https://twitter.com/brainaut1" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item my-2">
+                        <a href="https://github.com/Brainaut" target="_blank"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li class="list-inline-item my-2">
+                        <a href="https://www.reddit.com/u/Brainautdefi" target="_blank"><i class="fab fa-reddit"></i></a>
+                    </li>
+                    <li class="list-inline-item my-2">
+                        <a href="https://t.me/brainaut" target="_blank"><i class="fa fa-paper-plane"></i></a>
+                    </li>
+                    <li class="list-inline-item my-2">
+                        <a href="https://www.youtube.com/channel/UCbV-GvYkPehFBhiOG7EXUyw" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="list-inline-item my-2">
+                        <a href="https://medium.com/@brainaut" target="_blank"><i class="fab fa-medium-m"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row align-items-center text-center">
+            <div class="col-md-6 text-md-left">
+                <p class="mb-md-0">&copy; 2021 Brainaut, Made by BrainautTEAM</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <ul class="list-unstyled list-inline m-0">
+                    <li class="list-inline-item">
+                        <a href="terms.html" title="Terms of Service">Terms of Service</a>
+                    </li>
+                    <li class="list-inline-item mx-2">|</li>
+                    <li class="list-inline-item">
+                        <a href="policy.html" title="Privacy Policy">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!--===============================
+    CONNECT WALLET MODAL
+===================================-->
+
+<div class="modal fade" id="walletModal" tabindex="-1" aria-labelledby="walletModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content bg-dark">
+            <div class="modal-header border-dark">
+                <h5 class="modal-title" id="exampleModalLabel">Connect to wallet</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <a href="#" class="card d-block my-3 bg-darker text-white" id="connectMM">
+                    <div class="card-body py-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="m-0">MetaMask</h6>
+                            <div class="wallet-img"><img src="images/mm.png" alt=""></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card d-block my-3 bg-darker text-white" id="connectTW">
+                    <div class="card-body py-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="m-0">TrustWallet</h6>
+                            <div class="wallet-img"><img src="images/TWT.png" alt=""></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--===============================
+    SCRIPT
+===================================-->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script>
+    let chart = Highcharts.chart('container', {
+        chart: {
+            backgroundColor: 'rgba(0,0,0,0)',
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            lineColor: 'rgba(0,0,0,0)',
+            tickColor: 'rgba(0,0,0,0)',
+            type: 'string',
+            tickPixelInterval: 100,
+            categories: ['12:00 AM',
+                '1:00 AM',
+                '2:00 AM',
+                '3:00 AM',
+                '4:00 AM',
+                '5:00 AM',
+                '6:00 AM',
+                '7:00 AM',
+                '8:00 AM',
+                '9:00 AM',
+                '10:00 AM',
+                '11:00 AM',
+                '12:00 PM',
+                '1:00 PM',
+                '2:00 PM',
+                '3:00 PM',
+                '4:00 PM',
+                '5:00 PM',
+                '6:00 PM',
+                '7:00 PM',
+                '8:00 PM',
+                '9:00 PM',
+                '10:00 PM',
+                '11:00 PM']
+        },
+        yAxis: {
+            visible: false
+        },
+        legend: {
+            enabled: false
+        },
+        tooltip:{
+            enabled: true,
+            formatter:function(){
+                // console.log('time : ', this.x, ' value : ', this.y);
+                $('#chartValue').html(this.y);
+                $('#secChartValue').html(this.y);
+                return this.x;
+            }
+        },
+        plotOptions: {
+            area: {
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, Highcharts.getOptions().colors[4]],
+                        [1, Highcharts.color(Highcharts.getOptions().colors[4]).setOpacity(0).get('rgba')]
+                    ]
+                },
+                marker: {
+                    radius: 0
+                },
+                lineWidth: 3,
+                lineColor: Highcharts.getOptions().colors[4],
+                states: {
+                    hover: {
+                        lineWidth: 3
+                    }
+                },
+                threshold: null
+            },
+            pointStart: 0
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            type: 'area',
+            name: '',
+            data: [
+                ['12:00 AM', 369],
+                ['1:00 AM', 640],
+                ['2:00 AM', 1005],
+                ['3:00 AM', 1436],
+                ['4:00 AM', 2063],
+                ['5:00 AM', 3057],
+                ['6:00 AM', 4618],
+                ['7:00 AM', 6444],
+                ['8:00 AM', 9822],
+                ['9:00 AM', 15468],
+                ['10:00 AM', 20434],
+                ['11:00 AM', 24126],
+                ['12:00 PM', 27387],
+                ['1:00 PM', 29459],
+                ['2:00 PM', 31056],
+                ['3:00 PM', 31982],
+                ['4:00 PM', 32040],
+                ['5:00 PM', 31233],
+                ['6:00 PM', 29224],
+                ['7:00 PM', 27342],
+                ['8:00 PM', 26662],
+                ['9:00 PM', 26956],
+                ['10:00 PM', 27912],
+                ['11:00 PM', 28999]
+            ]
+        }]
+    });
+
+
+    // UPDATE CHART
+
+    $('#oneDay').click(function () {
+        $(this).addClass('active');
+        $('#oneWeek').removeClass('active');
+        $('#oneMonth').removeClass('active');
+        chart.xAxis[0].update({categories: ['12:00 AM', '1:00 AM', '2:00 AM', '3:00 AM', '4:00 AM', '5:00 AM', '6:00 AM', '7:00 AM', '8:00 AM', '9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM', '9:00 PM', '10:00 PM', '11:00 PM']});
+        chart.series[0].setData([369, 640, 1005, 1436, 2063, 3057, 4618, 6444, 9822, 15468, 20434, 24126, 27387, 29459, 31056, 31982, 32040, 31233, 29224, 27342, 26662, 26956, 27912, 28999]);
+    });
+
+    $('#oneWeek').click(function () {
+        $(this).addClass('active');
+        $('#oneDay').removeClass('active');
+        $('#oneMonth').removeClass('active');
+        chart.xAxis[0].update({categories: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7',]});
+        chart.series[0].setData([369, 640, 1005, 1436, 2063, 3057, 4618]);
+    });
+
+    $('#oneMonth').click(function () {
+        $(this).addClass('active');
+        $('#oneDay').removeClass('active');
+        $('#oneWeek').removeClass('active');
+        chart.xAxis[0].update({categories: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7', 'Day 8', 'Day 9', 'Day 10', 'Day 11', 'Day 12', 'Day 13', 'Day 14', 'Day 15', 'Day 16', 'Day 17', 'Day 18', 'Day 19', 'Day 20', 'Day 21', 'Day 22', 'Day 23', 'Day 24', 'Day 25', 'Day 26', 'Day 27', 'Day 28', 'Day 29', 'Day 30']});
+        chart.series[0].setData([369, 640, 1005, 1436, 2063, 3057, 4618, 6444, 9822, 15468, 20434, 24126, 27387, 29459, 31056, 31982, 32040, 31233, 29224, 27342, 26662, 26956, 27912, 27000, 29224, 27342, 26662, 26956, 27912, 28999]);
+    });
+</script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
